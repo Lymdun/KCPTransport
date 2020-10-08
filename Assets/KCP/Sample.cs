@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace KcpProject
 {
@@ -25,7 +25,7 @@ namespace KcpProject
         {
             connection.Update();
 
-            if (!stopSend)
+            if (connection.IsConnected && !stopSend)
             {
                 //firstSend = false;
                 // Console.WriteLine("Write Message...");
