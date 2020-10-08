@@ -51,11 +51,6 @@ namespace KcpProject
             {
                 return;
             }
-            else if (n < 0)
-            {
-                Debug.LogError("Receive Message failed.");
-                return;
-            }
             else
             {
                 recvBytes += n;
