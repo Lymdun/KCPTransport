@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace KcpProject
 {
@@ -54,7 +54,7 @@ namespace KcpProject
             else
             {
                 recvBytes += n;
-                Debug.LogError($"{recvBytes} / {sendBytes}");
+                Debug.Log(name + $"{recvBytes} / {sendBytes}");
             }
 
             //var resp = Encoding.UTF8.GetString(buffer, 0, n);
